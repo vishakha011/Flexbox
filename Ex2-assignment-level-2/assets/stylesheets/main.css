@@ -233,7 +233,8 @@ p {
   margin-bottom: 12px;
 }
 
-button {
+.read-more {
+  display: inline-block;
   padding: 18px 60px;
   border-radius: 8px;
   margin: 16px 0 10px;

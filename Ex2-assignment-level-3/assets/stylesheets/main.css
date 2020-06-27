@@ -81,6 +81,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 a {
     text-decoration: none;
 }
@@ -90,26 +91,23 @@ a {
 }
 
 .btn {
+    font-weight: 700;
+    display: inline-block;
     padding: 20px 50px;
-    border-radius: 30px;
     margin: 35px 0;
     border: none;
-}
-
-.btn a {
+    border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 700;
+    
 }
 
 .section-btn {
-    background-color: #fff;
-    border: 2px solid #e9e9e9;
-}
-
-.section-btn a {
     font-weight: bold;
     color: #7C7C7C;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #e9e9e9;
 }
 
 .break {
@@ -193,12 +191,13 @@ Section 1
 
 
 .hero-btn {  
+    color: white;
     background-color: #5EBD8B;
 }
 
-.hero-btn a {   
-    color: white;
-}
+/* .hero-btn a {   
+    
+} */
 
 /*
 =============================================================
