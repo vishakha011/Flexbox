@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container position">
+        <div class="container flex">
             <a class="logo" href="#">Prism</a>
 
             <nav class="nav">
@@ -30,12 +30,12 @@
                     <section class="col-1-2">
                         <h2 class="hero-heading">
                             Welcome to Prism, a a free responsive site template by <strong>TEMPLATED</strong>
-                    </h2>
+                        </h2>
                     </section>
 
                     <section class="col-1-2">
                         <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam numquam velit minus nisi explicabo corrupti accusantium temporibus est odit debitis, architecto.</p>
-                        <a class="btn hero-btn" href="#">Get statrted</a>
+                        <a class="btn hero-btn" href="#">Get started</a>
                     </section>
                 </div>                
             </section>
@@ -44,11 +44,11 @@
             <!--Section 2-->
             <section class="section-2 padding">
                 <div class="container hero">
-                    <section class="col-1-2 break">
+                    <article class="col-1-2 break">
                         <h2 class="heading">Explicabo corrupti accusantium</h2>
                         <p class="text section-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam numquam velit minus nisi explicabo corrupti accusantium temporibus est odit debitis, architecto, magnam fugiat magni cum? Odit temporibus rem dolore nisi.</p>
                         <a class="btn section-btn" href="#">Learn More</a>
-                    </section>
+                    </article>
 
                     <section class="col-1-2">
                         <ul class="row-menu">
@@ -66,7 +66,10 @@
             <section class="section-3 padding">
                 <div class="container">
                     <div class="article">
-                        <img src="assets/images/pic01.jpg" alt="Article 1 Image">
+                        <div class="article-img">
+                            <img src="assets/images/pic01.jpg" alt="Article 1 Image">
+                        </div>
+                        
                         <div class="sub-article">
                             <h3 class="heading">Ipsum dolor sit amet consectetur adipisicing elit</h3>
                             <p class="article-para">Perspiciatis recusandae cupiditate soluta harum cumque quis voluptates voluptatibus iusto. Molestias, cupiditate! Deserunt laboriosam.</p>
@@ -75,7 +78,10 @@
                     </div>
 
                     <div class="article">
-                        <img src="assets/images/pic02.jpg" alt="Article 1 Image">
+                        <div class="article-img">
+                            <img src="assets/images/pic02.jpg" alt="Article 1 Image">
+                        </div>
+                        
                         <div class="sub-article">
                             <h3 class="heading">Ipsum dolor sit amet consectetur adipisicing elit</h3>
                             <p class="article-para">Perspiciatis recusandae cupiditate soluta harum cumque quis voluptates voluptatibus iusto. Molestias, cupiditate! Deserunt laboriosam.</p>
@@ -84,7 +90,10 @@
                     </div>
 
                     <div class="article">
-                        <img src="assets/images/pic03.jpg" alt="Article 1 Image">
+                        <div class="article-img">
+                            <img src="assets/images/pic03.jpg" alt="Article 1 Image">
+                        </div>
+                        
                         <div class="sub-article">
                             <h3 class="heading">Ipsum dolor sit amet consectetur adipisicing elit</h3>
                             <p class="article-para">Perspiciatis recusandae cupiditate soluta harum cumque quis voluptates voluptatibus iusto. Molestias, cupiditate! Deserunt laboriosam.</p>
@@ -106,23 +115,41 @@
                         <h2 class="heading">Orci malesuada</h2>
                         <p class="text section-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam odit debitis.</p>
 
-                        <form>
-                            <input class="name font" type="text" placeholder="Name">
-                            <input class="mail font" type="email" placeholder="Email">
-                            <textarea class="textarea font" name="message">Message</textarea>
+                        <form class="form">
+                            <div class="flex">
+                                <input class="form-control" type="text" placeholder="Name">
+                                <input class="form-control" type="email" placeholder="Email">
+                            </div>
                             
+                            <textarea class="form-control" rows="10" name="message">Message</textarea>
+                            <input type="submit" value="Send Message" class="btn section-btn">        
                         </form>
 
-                        <a class="btn section-btn" href="#">Send message</a>
                     </section>
 
                     <section class="col-1-2">
-                        <ul class="row-menu">
-                            <li class="row-menu-item section4-padding"><i class="fab fa-twitter"></i>twitter.com/untitled-tld</li>
-                            <li class="row-menu-item section4-padding"><i class="fab fa-facebook-f"></i>facebook.com/untitled-tld</li>
-                            <li class="row-menu-item section4-padding"><i class="fab fa-instagram"></i>instagram.com/untitled-tld</li>
-                            <li class="row-menu-item section4-padding"><i class="fas fa-envelope"></i>information@untitled.tld</li>
-                            <li class="row-menu-item section4-padding"><i class="fas fa-home"></i>1234 Somewhere Road Suite 9823 Nashville, TN 00000-0000</li>
+                        <ul class="contact-menu">
+                            <li class="contact-menu-item">
+                                <span><i class="fab fa-twitter"></i></span>
+                                <a href="#">twitter.com/untitled-tld</a>
+                            </li>
+                            <li class="contact-menu-item">
+                                <span><i class="fab fa-facebook-f"></i></span>
+                                <a href="#">facebook.com/untitled-tld</a>
+                            </li>
+                            <li class="contact-menu-item">
+                                <span><i class="fab fa-instagram"></i></span>
+                                <a href="#">instagram.com/untitled-tld</a>
+                            </li>
+                            <li class="contact-menu-item">
+                                <span><i class="fas fa-envelope"></i></span>
+                                <a href="#">information@untitled.tld</a>
+                            </li>
+                            <li class="contact-menu-item">
+                                <span><i class="fas fa-home"></i></span>
+                                <address>1234 Somewhere Road Suite 9823 <br/> 
+                                   <p class="margin">Nashville, TN 00000-0000</p> </address>
+                            </li>
                         </ul>
                     </section>
                 </div>

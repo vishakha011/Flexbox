@@ -76,7 +76,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-.position {
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,26 +88,6 @@ a {
 
 .padding {
     padding-top: 70px;
-}
-
-.btn {
-    font-weight: 700;
-    display: inline-block;
-    padding: 20px 50px;
-    margin: 35px 0;
-    border: none;
-    border-radius: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    
-}
-
-.section-btn {
-    font-weight: bold;
-    color: #7C7C7C;
-    display: inline-block;
-    background-color: #fff;
-    border: 2px solid #e9e9e9;
 }
 
 .break {
@@ -130,12 +110,50 @@ a {
 
 /*
 =============================================================
+Buttons
+=============================================================
+*/
+
+.btn {
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 35px 0;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.section-btn {
+    font-weight: bold;
+    color: #7C7C7C;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #e9e9e9;
+}
+
+
+.hero-btn {  
+    color: white;
+    background-color: #5EBD8B;
+}
+
+
+/*
+=============================================================
 Header
 =============================================================
 */
-header {
-    background-color: #5F4878;
+.header {
+    padding: 16px 0;
+    position: absolute;
+    width: 100%;
 }
+/* header {
+    background-color: #5F4878;
+} */
 
 .logo {
     font-size: 30px;
@@ -166,7 +184,8 @@ Section 1
 =============================================================
 */
 .hero-section {
-    background-color: #5F4878;
+    background: linear-gradient(to right top, #5F4878, #783e78);
+    /* background-color: #5F4878; */
     padding: 90px 0 50px 0;
 }
 .col-1-2 {
@@ -189,19 +208,9 @@ Section 1
     /* letter-spacing: 2px; */
 }
 
-
-.hero-btn {  
-    color: white;
-    background-color: #5EBD8B;
-}
-
-/* .hero-btn a {   
-    
-} */
-
 /*
 =============================================================
-Section-2 / Section-4 
+Section-2 
 =============================================================
 */
 
@@ -226,6 +235,7 @@ h2 {
     color: #5EBD8B;
     margin-right: 15px;
     font-size: 20px;
+    
 }
 
 .section-para,
@@ -254,16 +264,16 @@ Section-3
     margin-bottom: 3em;
 }
 
-.article img {
-    width: 700px;
-    height: 400px;
-    object-fit: cover;
+.article-img {
+    font-size: 0;
+    flex: 0 1 40%;
 }
 
 .sub-article {
-    padding-left: 75px;
-    /* text-align: center; */
-    align-self: center;
+    flex: 0 1 60%;
+    padding: 0 50px;
+    margin-top: 25px;
+    align-self: center; 
 }
 
 h3 {
@@ -289,26 +299,50 @@ h3 {
 Section-4
 =============================================================
 */
-.font {
-    margin-top: 35px;
-    padding: 12px 14px;
-    font-size: 18px;
-    color: #7C7C7C;
-    border: 1px solid #e9e9e9;
+
+.form {
+    padding: 30px 60px 0 0;
+    /* padding-right: 60px; */
 }
-.name {
-    margin-right: 30px;
-    
-}
-.textarea {
-    width: 530px;
-    height: 150px;
-    /* border-color: #e9e9e9; */
+.form input {
+    width: 48%;
 }
 
-.section4-padding {
-    padding-bottom: 10px;
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin: 16px 0;
+    font-size: 20px;
+    border: 1px solid #e9e9e9;
+}   
+
+::placeholder,
+.form-control {
+    color: #DFDFDF;
+    font-weight: 600;
 }
+
+.contact-menu li {
+    display: flex;
+    margin: 24px 0;
+    color: #7C7C7C;
+    font-size: 19px;
+    font-weight: 500;
+    align-items: flex-start;
+    line-height: 36px;
+  }
+
+  .contact-menu li a {
+    color: #7C7C7C;
+  }
+  .contact-menu span {
+    width: 35px;
+  }
+  
+  .margin {
+      margin-top: 10px;
+  }
 
 /*
 =============================================================
@@ -318,9 +352,9 @@ Footer
 
 footer {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     color: #d2cdcd;
     background-color: #FAFAFA;
-    border-top: 2px solid #e9e9e9;
+    border-top: 2px solid #DFDFDF;
     padding: 50px 0;
 }
